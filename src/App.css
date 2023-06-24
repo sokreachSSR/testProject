@@ -1,0 +1,100 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../public/Font/Roboto-Regular.ttf);
+}
+.Roboto{
+    font-family: Roboto;
+}
+div.react-select__control, .css-l6rpfx-control {
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid gray;
+    width: 100px;
+    
+    
+}
+@media  (max-width: 400px) {
+  
+    div.react-select__control, .css-l6rpfx-control {
+        background-color: white;
+        border-radius: 15px;
+        font-size: 10px;
+        border: 2px solid rgb(48, 172, 141);
+        width: 120px;
+
+    }
+ 
+  }
+  @media  (min-width: 1040px) {
+  
+    div.react-select__control, .css-l6rpfx-control {
+        background-color: white;
+        border-radius: 20px;
+        border: 2px solid gray;
+        width: 100px;
+        
+        
+    }
+    
+  }
+
+
+
+
+
+div.react-select__control:hover, .css-l6rpfx-control {
+    background-color: #04AA9C;
+  }
+div.fontSize{
+    font-size: 12px;
+    font-family: Roboto;
+
+}
+div.im{
+    width: 20px;
+    height: 20px;
+}
+
+.main-container-popup-send-message {
+    width: 380px;
+}
+
+.main-container-popup-success {
+    width: 180px;
+}
+
+.main-container-popup-waiting {
+    width: 360px;
+}
+#truncate{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-text-clamp: 8;
+    overflow: hidden; 
+  }
+
+
+  .loader {
+	border-top-color: #3498db;
+	-webkit-animation: spinner 1.5s linear infinite;
+	animation: spinner 1.5s linear infinite;
+}
+
+@-webkit-keyframes spinner {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@keyframes spinner {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+

@@ -1,0 +1,274 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Noto+Sans+Khmer:wght@300&family=Roboto&display=swap");
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  /* .scrollbar::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: #f7f4ed;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #e0cbcb;
+    border-radius: 100vh;
+    border: 3px solid #f6f7ed;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #c0a0b9;
+  } */
+}
+
+.input{
+  width: 332px;
+  height: 34px;
+  border-radius: 30px;
+  font-size: 12px;
+  align-items: center;
+  font-family: Roboto;
+  
+}
+.annountmentInput{
+  width: 290px; 
+   height: 34px; 
+   border-radius: 30px;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  
+}
+div.b {
+  white-space: nowrap; 
+  width: 150px; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+
+}
+
+.custom-scrollbar {
+  height: 1200px; 
+  overflow: auto;
+}
+
+
+.custom-scrollbar::-webkit-scrollbar {
+  background-color: #F6F6F6;
+  width: 12px;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(.5, #30E3DF), color-stop(1, #1D9BF0));
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #04AA9C; /* Color of the scrollbar thumb on hover */
+}
+
+
+
+
+.input-field {
+  /* Your existing styles */
+  border: none;
+  border-bottom: 1px solid #04AA9C;
+}
+
+.input-error {
+  /* Your existing styles */
+  border-color: red;
+}
+
+.toggle-password {
+  /* Your existing styles */
+  color: #04AA9C;
+}
+
+.btn-login {
+  /* Your existing styles */
+  background-color: #04AA9C;
+}
+
+.btn-google-login {
+  /* Your existing styles */
+  background-color: #04AA9C;
+}
+
+.or-divider .line {
+  /* Your existing styles */
+  background-color: #04AA9C;
+}
+
+.signup-link a {
+  /* Your existing styles */
+  color: #04AA9C;
+}
+
+
+/* scroll style */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary) var(--primary);
+}
+:root {
+  --primary: #F6F6F6;
+  --secondary: #cbd5e1;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--primary);
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--secondary);
+  border-radius: 14px;
+  border: 3px solid var(--primary);
+}
+
+
+
+.detail-box .modal-box{
+  padding: 0;
+}
+
+.switch-button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.switch-icon {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  margin: 0 auto;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+
+
+
+.switch-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  transition: transform 0.9s ease;
+}
+
+.switch-icon:hover {
+  background-color: #eee;
+}
+
+.switch-icon:hover .switch-image {
+  transform: rotate(360deg);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* text */
+.post-textarea {
+  white-space: pre-line;
+}
+
+.your-element-class {
+  background-color: none; /* or background-color: transparent; */
+}
+.full-screen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Adjust opacity as desired */
+  backdrop-filter: blur(8px); /* Apply blur effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-screen-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 20px;
+}
+
+.bullet {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: rgb(26, 26, 26);
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+  .welcome-message {
+    color: #04AA9C;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+
+  .follow-button {
+    background-color: #04AA9C;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .follow-button:hover {
+    background-color: #048c81;
+  }
+  
