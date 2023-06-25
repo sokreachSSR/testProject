@@ -3,14 +3,13 @@ import { initializeApp } from "firebase/app";
 import { GoogleAuthProvider, getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAgtYN7mVqxgwv39CnZA9Z8K_utOLbAQLA",
-  authDomain: "portify-992a1.firebaseapp.com",
-  projectId: "portify-992a1",
-  storageBucket: "portify-992a1.appspot.com",
-  messagingSenderId: "454070982023",
-  appId: "1:454070982023:web:344d972ffa83fcdd6a6f22"
+  apiKey: "AIzaSyBtWcZkCmr3v4WOjMzFgiGN7cGhGsxS25Q",
+  authDomain: "loggin-3bdaa.firebaseapp.com",
+  projectId: "loggin-3bdaa",
+  storageBucket: "loggin-3bdaa.appspot.com",
+  messagingSenderId: "770647264263",
+  appId: "1:770647264263:web:355738fde8e53226392ea2"
 };
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const provider = new GoogleAuthProvider();
